@@ -1,0 +1,11 @@
+------------------------------
+SUBJECT sub-10
+HEMI    lh rh
+DATE Fri Jul 14 13:47:56 EDT 2017
+USER freesurfer_user
+HOST CFMI-iMac-04.local
+PROCESSID 40174 
+PROCESSOR x86_64
+OS Darwin
+Darwin CFMI-iMac-04.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+$Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
