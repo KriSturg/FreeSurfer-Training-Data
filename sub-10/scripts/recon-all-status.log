@@ -870,3 +870,25 @@ New invocation of recon-all
 status file for recon-all
 Fri Jul 14 13:47:56 EDT 2017
 #@# ASeg Stats Fri Jul 14 13:47:56 EDT 2017
+recon-all -s sub-10 finished without error at Fri Jul 14 13:53:49 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Fri Jul 14 13:53:50 EDT 2017
+#@# WMParc Fri Jul 14 13:53:50 EDT 2017
+recon-all -s sub-10 finished without error at Fri Jul 14 14:15:15 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Fri Jul 14 14:15:16 EDT 2017
+#@# BA_exvivo Labels lh Fri Jul 14 14:15:16 EDT 2017
+recon-all -s sub-10 finished without error at Fri Jul 14 14:22:19 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Fri Jul 14 14:22:20 EDT 2017
+#@# BA_exvivo Labels rh Fri Jul 14 14:22:20 EDT 2017
+recon-all -s sub-10 finished without error at Fri Jul 14 14:29:24 EDT 2017

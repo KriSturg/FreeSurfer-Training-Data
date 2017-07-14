@@ -21357,3 +21357,2793 @@ Voxel Volume is 1 mm^3
 Generating list of segmentation ids
 Found  50 segmentations
 Computing statistics for each segmentation
+
+Reporting on  45 segmentations
+Using PrintSegStat
+mri_segstats done
+
+Started at Fri Jul 14 13:47:55 EDT 2017 
+Ended   at Fri Jul 14 13:53:49 EDT 2017
+#@#%# recon-all-run-time-hours 0.098
+recon-all -s sub-10 finished without error at Fri Jul 14 13:53:49 EDT 2017
+Fri Jul 14 13:53:50 EDT 2017
+/Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10
+/Applications/freesurfer/bin/recon-all
+-s /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10 -wmparc
+#-----------------------------------------
+#@# WMParc Fri Jul 14 13:53:50 EDT 2017
+/Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10
+\n mri_aparc2aseg --s sub-10 --labelwm --hypo-as-wm --rip-unknown --volmask --o mri/wmparc.mgz --ctxseg aparc+aseg.mgz \n
+SUBJECTS_DIR /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+subject sub-10
+outvol mri/wmparc.mgz
+useribbon 0
+baseoffset 0
+labeling wm
+labeling hypo-intensities as wm
+dmaxctx 5.000000
+RipUnknown 1
+CtxSeg /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/aparc+aseg.mgz
+
+Reading lh white surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+
+Reading lh pial surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.pial
+
+Loading lh annotations from /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label/lh.aparc.annot
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+
+Reading rh white surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+
+Reading rh pial surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.pial
+
+Loading rh annotations from /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label/rh.aparc.annot
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/tanha_002/users/greve/fsdev.build/average/colortable_desikan_killiany.txt)
+Have color table for lh white annotation
+Have color table for rh white annotation
+Loading ribbon segmentation from /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/ribbon.mgz
+Loading filled from /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/ribbon.mgz
+Ripping vertices labeled as unkown
+Ripped 6512 vertices from left hemi
+Ripped 6935 vertices from right hemi
+
+Building hash of lh white
+
+Building hash of lh pial
+
+Building hash of rh white
+
+Building hash of rh pial
+
+Loading aseg from /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/aseg.mgz
+Loading Ctx Seg File /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/aparc+aseg.mgz
+ASeg Vox2RAS: -----------
+-1.00000   0.00000   0.00000   128.00000;
+ 0.00000   0.00000   1.00000  -128.00000;
+ 0.00000  -1.00000   0.00000   128.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+-------------------------
+
+Labeling Slice
+  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19 
+ 20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39 
+ 40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59 
+ 60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79 
+ 80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 
+100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 
+120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 
+140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 
+160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 
+180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 
+200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 
+220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 
+240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 nctx = 780728
+Used brute-force search on 0 voxels
+Fixing Parahip LH WM
+  Found 11 clusters
+     0 k 1.000000
+     1 k 1.000000
+     2 k 4.000000
+     3 k 2.000000
+     4 k 87.000000
+     5 k 1.000000
+     6 k 1.000000
+     7 k 1.000000
+     8 k 1017.000000
+     9 k 1.000000
+     10 k 1.000000
+Fixing Parahip RH WM
+  Found 8 clusters
+     0 k 1.000000
+     1 k 1.000000
+     2 k 1074.000000
+     3 k 6.000000
+     4 k 1.000000
+     5 k 3.000000
+     6 k 19.000000
+     7 k 3.000000
+Writing output aseg to mri/wmparc.mgz
+\n mri_segstats --seg mri/wmparc.mgz --sum stats/wmparc.stats --pv mri/norm.mgz --excludeid 0 --brainmask mri/brainmask.mgz --in mri/norm.mgz --in-intensity-name norm --in-intensity-units MR --subject sub-10 --surf-wm-vol --ctab /Applications/freesurfer/WMParcStatsLUT.txt --etiv \n
+
+$Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+cwd 
+cmdline mri_segstats --seg mri/wmparc.mgz --sum stats/wmparc.stats --pv mri/norm.mgz --excludeid 0 --brainmask mri/brainmask.mgz --in mri/norm.mgz --in-intensity-name norm --in-intensity-units MR --subject sub-10 --surf-wm-vol --ctab /Applications/freesurfer/WMParcStatsLUT.txt --etiv 
+sysname  Darwin
+hostname CFMI-iMac-04.local
+machine  x86_64
+user     freesurfer_user
+UseRobust  0
+atlas_icv (eTIV) = 1149027 mm^3    (det: 1.695440 )
+Loading mri/wmparc.mgz
+Getting Brain Volume Statistics
+lhCtxGM: 216236.041 215626.000  diff=  610.0  pctdiff= 0.282
+rhCtxGM: 218634.454 218208.000  diff=  426.5  pctdiff= 0.195
+lhCtxWM: 171415.550 171847.000  diff= -431.5  pctdiff=-0.252
+rhCtxWM: 176591.447 177282.000  diff= -690.6  pctdiff=-0.391
+SubCortGMVol  47432.000
+SupraTentVol  846039.491 (843943.000) diff=2096.491 pctdiff=0.248
+SupraTentVolNotVent  832505.491 (830409.000) diff=2096.491 pctdiff=0.252
+BrainSegVol  957657.000 (955630.000) diff=2027.000 pctdiff=0.212
+BrainSegVolNotVent  941155.000 (940910.491) diff=244.509 pctdiff=0.026
+BrainSegVolNotVent  941155.000
+CerebellumVol 110587.000
+VentChorVol   13534.000
+3rd4th5thCSF   2968.000
+CSFVol   941.000, OptChiasmVol   159.000
+MaskVol 1301888.000
+Loading mri/norm.mgz
+Loading mri/norm.mgz
+Voxel Volume is 1 mm^3
+Generating list of segmentation ids
+Found 390 segmentations
+Computing statistics for each segmentation
+
+Reporting on  70 segmentations
+Using PrintSegStat
+mri_segstats done
+
+Started at Fri Jul 14 13:53:50 EDT 2017 
+Ended   at Fri Jul 14 14:15:15 EDT 2017
+#@#%# recon-all-run-time-hours 0.357
+recon-all -s sub-10 finished without error at Fri Jul 14 14:15:15 EDT 2017
+Fri Jul 14 14:15:16 EDT 2017
+/Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10
+/Applications/freesurfer/bin/recon-all
+-s /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10 -hemi lh -balabels
+/Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label
+#--------------------------------------------
+#@# BA_exvivo Labels lh Fri Jul 14 14:15:16 EDT 2017
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA1_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA1_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA1_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA1_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 4129 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4129 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 246
+Checking for and removing duplicates
+Writing label file ./lh.BA1_exvivo.label 4375
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA2_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA2_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA2_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA2_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 7909 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  7909 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 459
+Checking for and removing duplicates
+Writing label file ./lh.BA2_exvivo.label 8368
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA3a_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA3a_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA3a_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA3a_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 4077 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4077 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 100
+Checking for and removing duplicates
+Writing label file ./lh.BA3a_exvivo.label 4177
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA3b_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA3b_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA3b_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA3b_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 5983 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  5983 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 206
+Checking for and removing duplicates
+Writing label file ./lh.BA3b_exvivo.label 6189
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA4a_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA4a_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA4a_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA4a_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 5784 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  5784 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 414
+Checking for and removing duplicates
+Writing label file ./lh.BA4a_exvivo.label 6198
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA4p_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA4p_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA4p_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA4p_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 4070 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4070 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 184
+Checking for and removing duplicates
+Writing label file ./lh.BA4p_exvivo.label 4254
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA6_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA6_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA6_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA6_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 13589 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  13589 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 898
+Checking for and removing duplicates
+Writing label file ./lh.BA6_exvivo.label 14487
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA44_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA44_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA44_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA44_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 4181 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4181 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 245
+Checking for and removing duplicates
+Writing label file ./lh.BA44_exvivo.label 4426
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA45_exvivo.label --trgsubject sub-10 --trglabel ./lh.BA45_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA45_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA45_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 3422 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3422 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 450
+Checking for and removing duplicates
+Writing label file ./lh.BA45_exvivo.label 3872
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.V1_exvivo.label --trgsubject sub-10 --trglabel ./lh.V1_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.V1_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.V1_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 4641 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4641 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 981
+Checking for and removing duplicates
+Writing label file ./lh.V1_exvivo.label 5622
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.V2_exvivo.label --trgsubject sub-10 --trglabel ./lh.V2_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.V2_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.V2_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 8114 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  8114 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 1588
+Checking for and removing duplicates
+Writing label file ./lh.V2_exvivo.label 9702
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.MT_exvivo.label --trgsubject sub-10 --trglabel ./lh.MT_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.MT_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.MT_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 2018 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  2018 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 89
+Checking for and removing duplicates
+Writing label file ./lh.MT_exvivo.label 2107
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.entorhinal_exvivo.label --trgsubject sub-10 --trglabel ./lh.entorhinal_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.entorhinal_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.entorhinal_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1290 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1290 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 92
+Checking for and removing duplicates
+Writing label file ./lh.entorhinal_exvivo.label 1382
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.perirhinal_exvivo.label --trgsubject sub-10 --trglabel ./lh.perirhinal_exvivo.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.perirhinal_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.perirhinal_exvivo.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1199 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1199 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 104
+Checking for and removing duplicates
+Writing label file ./lh.perirhinal_exvivo.label 1303
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA1_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA1_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA1_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA1_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1014 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1014 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 80
+Checking for and removing duplicates
+Writing label file ./lh.BA1_exvivo.thresh.label 1094
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA2_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA2_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA2_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA2_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 2092 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  2092 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 223
+Checking for and removing duplicates
+Writing label file ./lh.BA2_exvivo.thresh.label 2315
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA3a_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA3a_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA3a_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA3a_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1504 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1504 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 43
+Checking for and removing duplicates
+Writing label file ./lh.BA3a_exvivo.thresh.label 1547
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA3b_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA3b_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA3b_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA3b_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1996 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1996 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 55
+Checking for and removing duplicates
+Writing label file ./lh.BA3b_exvivo.thresh.label 2051
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA4a_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA4a_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA4a_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA4a_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 2319 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  2319 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 116
+Checking for and removing duplicates
+Writing label file ./lh.BA4a_exvivo.thresh.label 2435
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA4p_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA4p_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA4p_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA4p_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1549 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1549 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 66
+Checking for and removing duplicates
+Writing label file ./lh.BA4p_exvivo.thresh.label 1615
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA6_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA6_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA6_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA6_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 7035 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  7035 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 565
+Checking for and removing duplicates
+Writing label file ./lh.BA6_exvivo.thresh.label 7600
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA44_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA44_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA44_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA44_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1912 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1912 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 105
+Checking for and removing duplicates
+Writing label file ./lh.BA44_exvivo.thresh.label 2017
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA45_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.BA45_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.BA45_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.BA45_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1151 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1151 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 164
+Checking for and removing duplicates
+Writing label file ./lh.BA45_exvivo.thresh.label 1315
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.V1_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.V1_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.V1_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.V1_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 3405 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3405 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 668
+Checking for and removing duplicates
+Writing label file ./lh.V1_exvivo.thresh.label 4073
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.V2_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.V2_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.V2_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.V2_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 3334 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3334 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 805
+Checking for and removing duplicates
+Writing label file ./lh.V2_exvivo.thresh.label 4139
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.MT_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.MT_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.MT_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.MT_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 513 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  513 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 14
+Checking for and removing duplicates
+Writing label file ./lh.MT_exvivo.thresh.label 527
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.entorhinal_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.entorhinal_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.entorhinal_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.entorhinal_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 470 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  470 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 50
+Checking for and removing duplicates
+Writing label file ./lh.entorhinal_exvivo.thresh.label 520
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.perirhinal_exvivo.thresh.label --trgsubject sub-10 --trglabel ./lh.perirhinal_exvivo.thresh.label --hemi lh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/lh.perirhinal_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./lh.perirhinal_exvivo.thresh.label
+regmethod = surface
+
+srchemi = lh
+trghemi = lh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 450 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  450 nlabel points
+Performing mapping from target back to the source label 110796
+Number of reverse mapping hits = 25
+Checking for and removing duplicates
+Writing label file ./lh.perirhinal_exvivo.thresh.label 475
+mri_label2label: Done
+
+\n mris_label2annot --s sub-10 --hemi lh --ctab /Applications/freesurfer/average/colortable_BA.txt --l lh.BA1_exvivo.label --l lh.BA2_exvivo.label --l lh.BA3a_exvivo.label --l lh.BA3b_exvivo.label --l lh.BA4a_exvivo.label --l lh.BA4p_exvivo.label --l lh.BA6_exvivo.label --l lh.BA44_exvivo.label --l lh.BA45_exvivo.label --l lh.V1_exvivo.label --l lh.V2_exvivo.label --l lh.MT_exvivo.label --l lh.entorhinal_exvivo.label --l lh.perirhinal_exvivo.label --a BA_exvivo --maxstatwinner --noverbose \n
+Reading ctab /Applications/freesurfer/average/colortable_BA.txt
+Number of ctab entries 15
+
+$Id: mris_label2annot.c,v 1.20 2016/01/07 23:28:11 greve Exp $
+cwd /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label
+cmdline mris_label2annot --s sub-10 --hemi lh --ctab /Applications/freesurfer/average/colortable_BA.txt --l lh.BA1_exvivo.label --l lh.BA2_exvivo.label --l lh.BA3a_exvivo.label --l lh.BA3b_exvivo.label --l lh.BA4a_exvivo.label --l lh.BA4p_exvivo.label --l lh.BA6_exvivo.label --l lh.BA44_exvivo.label --l lh.BA45_exvivo.label --l lh.V1_exvivo.label --l lh.V2_exvivo.label --l lh.MT_exvivo.label --l lh.entorhinal_exvivo.label --l lh.perirhinal_exvivo.label --a BA_exvivo --maxstatwinner --noverbose 
+sysname  Darwin
+hostname CFMI-iMac-04.local
+machine  x86_64
+user     freesurfer_user
+
+subject sub-10
+hemi    lh
+SUBJECTS_DIR /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+ColorTable /Applications/freesurfer/average/colortable_BA.txt
+AnnotName  BA_exvivo
+nlables 14
+LabelThresh 0 0.000000
+Loading /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.orig
+ 1 1530880 BA1_exvivo
+ 2 16749699 BA2_exvivo
+ 3 16711680 BA3a_exvivo
+ 4 3368703 BA3b_exvivo
+ 5 1376196 BA4a_exvivo
+ 6 13382655 BA4p_exvivo
+ 7 10036737 BA6_exvivo
+ 8 2490521 BA44_exvivo
+ 9 39283 BA45_exvivo
+10 3993 V1_exvivo
+11 8508928 V2_exvivo
+12 10027163 MT_exvivo
+13 16422433 perirhinal_exvivo
+14 16392598 entorhinal_exvivo
+Mapping unhit to unknown
+Found 74853 unhit vertices
+Writing annot to /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label/lh.BA_exvivo.annot
+\n mris_label2annot --s sub-10 --hemi lh --ctab /Applications/freesurfer/average/colortable_BA.txt --l lh.BA1_exvivo.thresh.label --l lh.BA2_exvivo.thresh.label --l lh.BA3a_exvivo.thresh.label --l lh.BA3b_exvivo.thresh.label --l lh.BA4a_exvivo.thresh.label --l lh.BA4p_exvivo.thresh.label --l lh.BA6_exvivo.thresh.label --l lh.BA44_exvivo.thresh.label --l lh.BA45_exvivo.thresh.label --l lh.V1_exvivo.thresh.label --l lh.V2_exvivo.thresh.label --l lh.MT_exvivo.thresh.label --l lh.entorhinal_exvivo.thresh.label --l lh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose \n
+Reading ctab /Applications/freesurfer/average/colortable_BA.txt
+Number of ctab entries 15
+
+$Id: mris_label2annot.c,v 1.20 2016/01/07 23:28:11 greve Exp $
+cwd /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label
+cmdline mris_label2annot --s sub-10 --hemi lh --ctab /Applications/freesurfer/average/colortable_BA.txt --l lh.BA1_exvivo.thresh.label --l lh.BA2_exvivo.thresh.label --l lh.BA3a_exvivo.thresh.label --l lh.BA3b_exvivo.thresh.label --l lh.BA4a_exvivo.thresh.label --l lh.BA4p_exvivo.thresh.label --l lh.BA6_exvivo.thresh.label --l lh.BA44_exvivo.thresh.label --l lh.BA45_exvivo.thresh.label --l lh.V1_exvivo.thresh.label --l lh.V2_exvivo.thresh.label --l lh.MT_exvivo.thresh.label --l lh.entorhinal_exvivo.thresh.label --l lh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose 
+sysname  Darwin
+hostname CFMI-iMac-04.local
+machine  x86_64
+user     freesurfer_user
+
+subject sub-10
+hemi    lh
+SUBJECTS_DIR /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+ColorTable /Applications/freesurfer/average/colortable_BA.txt
+AnnotName  BA_exvivo.thresh
+nlables 14
+LabelThresh 0 0.000000
+Loading /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.orig
+ 1 1530880 BA1_exvivo
+ 2 16749699 BA2_exvivo
+ 3 16711680 BA3a_exvivo
+ 4 3368703 BA3b_exvivo
+ 5 1376196 BA4a_exvivo
+ 6 13382655 BA4p_exvivo
+ 7 10036737 BA6_exvivo
+ 8 2490521 BA44_exvivo
+ 9 39283 BA45_exvivo
+10 3993 V1_exvivo
+11 8508928 V2_exvivo
+12 10027163 MT_exvivo
+13 16422433 perirhinal_exvivo
+14 16392598 entorhinal_exvivo
+Mapping unhit to unknown
+Found 88812 unhit vertices
+Writing annot to /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label/lh.BA_exvivo.thresh.annot
+\n mris_anatomical_stats -th3 -mgz -f ../stats/lh.BA_exvivo.stats -b -a ./lh.BA_exvivo.annot -c ./BA_exvivo.ctab sub-10 lh white \n
+computing statistics for each annotation in ./lh.BA_exvivo.annot.
+reading volume /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/wm.mgz...
+reading input surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white...
+reading input pial surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.pial...
+reading input white surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+Using TH3 vertex volume calc
+Total face volume 220332
+Total vertex volume 217101 (mask=0)
+reading colortable from annotation file...
+colortable with 15 entries read (originally /Applications/freesurfer/average/colortable_BA.txt)
+Saving annotation colortable ./BA_exvivo.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1149027 mm^3    (det: 1.695440 )
+lhCtxGM: 216236.041 215626.000  diff=  610.0  pctdiff= 0.282
+rhCtxGM: 218634.454 218208.000  diff=  426.5  pctdiff= 0.195
+lhCtxWM: 171415.550 171847.000  diff= -431.5  pctdiff=-0.252
+rhCtxWM: 176591.447 177282.000  diff= -690.6  pctdiff=-0.391
+SubCortGMVol  47432.000
+SupraTentVol  846039.491 (843943.000) diff=2096.491 pctdiff=0.248
+SupraTentVolNotVent  832505.491 (830409.000) diff=2096.491 pctdiff=0.252
+BrainSegVol  957657.000 (955630.000) diff=2027.000 pctdiff=0.212
+BrainSegVolNotVent  941155.000 (940910.491) diff=244.509 pctdiff=0.026
+BrainSegVolNotVent  941155.000
+CerebellumVol 110587.000
+VentChorVol   13534.000
+3rd4th5thCSF   2968.000
+CSFVol   941.000, OptChiasmVol   159.000
+MaskVol 1301888.000
+ 1084    610   1951  2.412 0.616     0.137     0.043       16     1.7  BA1_exvivo
+ 3712   2478   6623  2.533 0.499     0.128     0.035       46     4.7  BA2_exvivo
+  949    666    975  1.914 0.458     0.151     0.042       10     1.8  BA3a_exvivo
+ 2056   1307   2861  1.950 0.605     0.119     0.030       25     2.7  BA3b_exvivo
+ 1529    789   2912  3.065 0.657     0.105     0.036       16     2.1  BA4a_exvivo
+ 1168    751   1824  2.479 0.454     0.119     0.035       10     1.8  BA4p_exvivo
+ 8390   5499  20347  3.148 0.577     0.122     0.033       99    10.9  BA6_exvivo
+ 2170   1450   5112  3.031 0.529     0.120     0.032       24     2.6  BA44_exvivo
+ 2622   1765   5746  2.700 0.687     0.135     0.038       37     3.8  BA45_exvivo
+ 3084   2004   3377  1.706 0.498     0.142     0.041       41     5.1  V1_exvivo
+ 6674   4332   9018  2.016 0.572     0.152     0.044      110    12.2  V2_exvivo
+ 1256    842   2806  2.779 0.595     0.134     0.034       16     1.4  MT_exvivo
+  594    373   1379  3.022 0.675     0.116     0.037        7     0.9  perirhinal_exvivo
+  655    433   1346  2.665 0.789     0.120     0.045        8     1.1  entorhinal_exvivo
+\n mris_anatomical_stats -th3 -mgz -f ../stats/lh.BA_exvivo.thresh.stats -b -a ./lh.BA_exvivo.thresh.annot -c ./BA_exvivo.thresh.ctab sub-10 lh white \n
+computing statistics for each annotation in ./lh.BA_exvivo.thresh.annot.
+reading volume /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/wm.mgz...
+reading input surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white...
+reading input pial surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.pial...
+reading input white surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/lh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+Using TH3 vertex volume calc
+Total face volume 220332
+Total vertex volume 217101 (mask=0)
+reading colortable from annotation file...
+colortable with 15 entries read (originally /Applications/freesurfer/average/colortable_BA.txt)
+Saving annotation colortable ./BA_exvivo.thresh.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1149027 mm^3    (det: 1.695440 )
+lhCtxGM: 216236.041 215626.000  diff=  610.0  pctdiff= 0.282
+rhCtxGM: 218634.454 218208.000  diff=  426.5  pctdiff= 0.195
+lhCtxWM: 171415.550 171847.000  diff= -431.5  pctdiff=-0.252
+rhCtxWM: 176591.447 177282.000  diff= -690.6  pctdiff=-0.391
+SubCortGMVol  47432.000
+SupraTentVol  846039.491 (843943.000) diff=2096.491 pctdiff=0.248
+SupraTentVolNotVent  832505.491 (830409.000) diff=2096.491 pctdiff=0.252
+BrainSegVol  957657.000 (955630.000) diff=2027.000 pctdiff=0.212
+BrainSegVolNotVent  941155.000 (940910.491) diff=244.509 pctdiff=0.026
+BrainSegVolNotVent  941155.000
+CerebellumVol 110587.000
+VentChorVol   13534.000
+3rd4th5thCSF   2968.000
+CSFVol   941.000, OptChiasmVol   159.000
+MaskVol 1301888.000
+  715    380   1403  2.518 0.591     0.138     0.044       11     1.1  BA1_exvivo
+ 1648   1100   2870  2.366 0.491     0.123     0.035       19     2.2  BA2_exvivo
+  794    573    801  1.917 0.464     0.166     0.047       10     1.7  BA3a_exvivo
+ 1243    821   1485  1.677 0.449     0.094     0.019        7     0.9  BA3b_exvivo
+ 1423    754   2703  3.083 0.631     0.102     0.033       13     2.1  BA4a_exvivo
+  974    642   1457  2.422 0.416     0.115     0.033        8     1.3  BA4p_exvivo
+ 5019   3231  11817  3.122 0.572     0.121     0.034       63     6.6  BA6_exvivo
+ 1375    922   3530  3.167 0.508     0.123     0.032       15     1.6  BA44_exvivo
+ 1066    716   2653  2.909 0.686     0.140     0.036       15     1.5  BA45_exvivo
+ 3263   2106   3629  1.718 0.499     0.139     0.040       43     5.3  V1_exvivo
+ 3473   2214   4377  1.932 0.563     0.159     0.049       66     7.2  V2_exvivo
+  331    214    806  3.065 0.625     0.141     0.037        5     0.4  MT_exvivo
+  325    202    842  3.103 0.666     0.107     0.036        3     0.4  perirhinal_exvivo
+  335    238    790  2.805 0.781     0.115     0.032        3     0.5  entorhinal_exvivo
+
+Started at Fri Jul 14 14:15:16 EDT 2017 
+Ended   at Fri Jul 14 14:22:19 EDT 2017
+#@#%# recon-all-run-time-hours 0.117
+recon-all -s sub-10 finished without error at Fri Jul 14 14:22:19 EDT 2017
+Fri Jul 14 14:22:20 EDT 2017
+/Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10
+/Applications/freesurfer/bin/recon-all
+-s /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10 -hemi rh -balabels
+/Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label
+#--------------------------------------------
+#@# BA_exvivo Labels rh Fri Jul 14 14:22:20 EDT 2017
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA1_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA1_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA1_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA1_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 3962 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3962 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 220
+Checking for and removing duplicates
+Writing label file ./rh.BA1_exvivo.label 4182
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA2_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA2_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA2_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA2_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 6687 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  6687 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 266
+Checking for and removing duplicates
+Writing label file ./rh.BA2_exvivo.label 6953
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA3a_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA3a_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA3a_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA3a_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 3980 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3980 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 56
+Checking for and removing duplicates
+Writing label file ./rh.BA3a_exvivo.label 4036
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA3b_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA3b_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA3b_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA3b_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 4522 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4522 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 124
+Checking for and removing duplicates
+Writing label file ./rh.BA3b_exvivo.label 4646
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA4a_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA4a_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA4a_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA4a_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 5747 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  5747 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 346
+Checking for and removing duplicates
+Writing label file ./rh.BA4a_exvivo.label 6093
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA4p_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA4p_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA4p_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA4p_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 4473 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4473 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 92
+Checking for and removing duplicates
+Writing label file ./rh.BA4p_exvivo.label 4565
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA6_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA6_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA6_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA6_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 12256 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  12256 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 801
+Checking for and removing duplicates
+Writing label file ./rh.BA6_exvivo.label 13057
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA44_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA44_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA44_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA44_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 6912 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  6912 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 425
+Checking for and removing duplicates
+Writing label file ./rh.BA44_exvivo.label 7337
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA45_exvivo.label --trgsubject sub-10 --trglabel ./rh.BA45_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA45_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA45_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 5355 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  5355 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 793
+Checking for and removing duplicates
+Writing label file ./rh.BA45_exvivo.label 6148
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.V1_exvivo.label --trgsubject sub-10 --trglabel ./rh.V1_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.V1_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.V1_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 4727 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  4727 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 726
+Checking for and removing duplicates
+Writing label file ./rh.V1_exvivo.label 5453
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.V2_exvivo.label --trgsubject sub-10 --trglabel ./rh.V2_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.V2_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.V2_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 8016 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  8016 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 1443
+Checking for and removing duplicates
+Writing label file ./rh.V2_exvivo.label 9459
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.MT_exvivo.label --trgsubject sub-10 --trglabel ./rh.MT_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.MT_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.MT_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1932 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1932 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 488
+Checking for and removing duplicates
+Writing label file ./rh.MT_exvivo.label 2420
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.entorhinal_exvivo.label --trgsubject sub-10 --trglabel ./rh.entorhinal_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.entorhinal_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.entorhinal_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1038 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1038 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 79
+Checking for and removing duplicates
+Writing label file ./rh.entorhinal_exvivo.label 1117
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.perirhinal_exvivo.label --trgsubject sub-10 --trglabel ./rh.perirhinal_exvivo.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.perirhinal_exvivo.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.perirhinal_exvivo.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 752 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  752 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 51
+Checking for and removing duplicates
+Writing label file ./rh.perirhinal_exvivo.label 803
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA1_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA1_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA1_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA1_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 876 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  876 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 82
+Checking for and removing duplicates
+Writing label file ./rh.BA1_exvivo.thresh.label 958
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA2_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA2_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA2_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA2_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 2688 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  2688 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 58
+Checking for and removing duplicates
+Writing label file ./rh.BA2_exvivo.thresh.label 2746
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA3a_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA3a_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA3a_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA3a_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1698 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1698 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 22
+Checking for and removing duplicates
+Writing label file ./rh.BA3a_exvivo.thresh.label 1720
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA3b_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA3b_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA3b_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA3b_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 2183 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  2183 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 23
+Checking for and removing duplicates
+Writing label file ./rh.BA3b_exvivo.thresh.label 2206
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA4a_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA4a_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA4a_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA4a_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1388 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1388 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 102
+Checking for and removing duplicates
+Writing label file ./rh.BA4a_exvivo.thresh.label 1490
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA4p_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA4p_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA4p_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA4p_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1489 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1489 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 7
+Checking for and removing duplicates
+Writing label file ./rh.BA4p_exvivo.thresh.label 1496
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA6_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA6_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA6_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA6_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 6959 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  6959 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 436
+Checking for and removing duplicates
+Writing label file ./rh.BA6_exvivo.thresh.label 7395
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA44_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA44_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA44_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA44_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1012 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1012 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 77
+Checking for and removing duplicates
+Writing label file ./rh.BA44_exvivo.thresh.label 1089
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA45_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.BA45_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.BA45_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.BA45_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 1178 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  1178 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 189
+Checking for and removing duplicates
+Writing label file ./rh.BA45_exvivo.thresh.label 1367
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.V1_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.V1_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.V1_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.V1_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 3232 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3232 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 407
+Checking for and removing duplicates
+Writing label file ./rh.V1_exvivo.thresh.label 3639
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.V2_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.V2_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.V2_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.V2_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 3437 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  3437 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 705
+Checking for and removing duplicates
+Writing label file ./rh.V2_exvivo.thresh.label 4142
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.MT_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.MT_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.MT_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.MT_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 268 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  268 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 84
+Checking for and removing duplicates
+Writing label file ./rh.MT_exvivo.thresh.label 352
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.entorhinal_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.entorhinal_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.entorhinal_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.entorhinal_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 694 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  694 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 49
+Checking for and removing duplicates
+Writing label file ./rh.entorhinal_exvivo.thresh.label 743
+mri_label2label: Done
+
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.perirhinal_exvivo.thresh.label --trgsubject sub-10 --trglabel ./rh.perirhinal_exvivo.thresh.label --hemi rh --regmethod surface \n
+
+srclabel = /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/label/rh.perirhinal_exvivo.thresh.label
+srcsubject = fsaverage
+trgsubject = sub-10
+trglabel = ./rh.perirhinal_exvivo.thresh.label
+regmethod = surface
+
+srchemi = rh
+trghemi = rh
+trgsurface = white
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+usehash = 1
+Use ProjAbs  = 0, 0
+Use ProjFrac = 0, 0
+DoPaint 0
+
+SUBJECTS_DIR    /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Loading source label.
+Found 291 points in source label.
+Starting surface-based mapping
+Reading source registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/fsaverage/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Reading target surface 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white
+Reading target registration 
+ /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.sphere.reg
+Rescaling ...  original radius = 100
+Building target registration hash (res=16).
+Building source registration hash (res=16).
+INFO: found  291 nlabel points
+Performing mapping from target back to the source label 112296
+Number of reverse mapping hits = 26
+Checking for and removing duplicates
+Writing label file ./rh.perirhinal_exvivo.thresh.label 317
+mri_label2label: Done
+
+\n mris_label2annot --s sub-10 --hemi rh --ctab /Applications/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.label --l rh.BA2_exvivo.label --l rh.BA3a_exvivo.label --l rh.BA3b_exvivo.label --l rh.BA4a_exvivo.label --l rh.BA4p_exvivo.label --l rh.BA6_exvivo.label --l rh.BA44_exvivo.label --l rh.BA45_exvivo.label --l rh.V1_exvivo.label --l rh.V2_exvivo.label --l rh.MT_exvivo.label --l rh.entorhinal_exvivo.label --l rh.perirhinal_exvivo.label --a BA_exvivo --maxstatwinner --noverbose \n
+Reading ctab /Applications/freesurfer/average/colortable_BA.txt
+Number of ctab entries 15
+
+$Id: mris_label2annot.c,v 1.20 2016/01/07 23:28:11 greve Exp $
+cwd /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label
+cmdline mris_label2annot --s sub-10 --hemi rh --ctab /Applications/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.label --l rh.BA2_exvivo.label --l rh.BA3a_exvivo.label --l rh.BA3b_exvivo.label --l rh.BA4a_exvivo.label --l rh.BA4p_exvivo.label --l rh.BA6_exvivo.label --l rh.BA44_exvivo.label --l rh.BA45_exvivo.label --l rh.V1_exvivo.label --l rh.V2_exvivo.label --l rh.MT_exvivo.label --l rh.entorhinal_exvivo.label --l rh.perirhinal_exvivo.label --a BA_exvivo --maxstatwinner --noverbose 
+sysname  Darwin
+hostname CFMI-iMac-04.local
+machine  x86_64
+user     freesurfer_user
+
+subject sub-10
+hemi    rh
+SUBJECTS_DIR /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+ColorTable /Applications/freesurfer/average/colortable_BA.txt
+AnnotName  BA_exvivo
+nlables 14
+LabelThresh 0 0.000000
+Loading /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.orig
+ 1 1530880 BA1_exvivo
+ 2 16749699 BA2_exvivo
+ 3 16711680 BA3a_exvivo
+ 4 3368703 BA3b_exvivo
+ 5 1376196 BA4a_exvivo
+ 6 13382655 BA4p_exvivo
+ 7 10036737 BA6_exvivo
+ 8 2490521 BA44_exvivo
+ 9 39283 BA45_exvivo
+10 3993 V1_exvivo
+11 8508928 V2_exvivo
+12 10027163 MT_exvivo
+13 16422433 perirhinal_exvivo
+14 16392598 entorhinal_exvivo
+Mapping unhit to unknown
+Found 77788 unhit vertices
+Writing annot to /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label/rh.BA_exvivo.annot
+\n mris_label2annot --s sub-10 --hemi rh --ctab /Applications/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.thresh.label --l rh.BA2_exvivo.thresh.label --l rh.BA3a_exvivo.thresh.label --l rh.BA3b_exvivo.thresh.label --l rh.BA4a_exvivo.thresh.label --l rh.BA4p_exvivo.thresh.label --l rh.BA6_exvivo.thresh.label --l rh.BA44_exvivo.thresh.label --l rh.BA45_exvivo.thresh.label --l rh.V1_exvivo.thresh.label --l rh.V2_exvivo.thresh.label --l rh.MT_exvivo.thresh.label --l rh.entorhinal_exvivo.thresh.label --l rh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose \n
+Reading ctab /Applications/freesurfer/average/colortable_BA.txt
+Number of ctab entries 15
+
+$Id: mris_label2annot.c,v 1.20 2016/01/07 23:28:11 greve Exp $
+cwd /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label
+cmdline mris_label2annot --s sub-10 --hemi rh --ctab /Applications/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.thresh.label --l rh.BA2_exvivo.thresh.label --l rh.BA3a_exvivo.thresh.label --l rh.BA3b_exvivo.thresh.label --l rh.BA4a_exvivo.thresh.label --l rh.BA4p_exvivo.thresh.label --l rh.BA6_exvivo.thresh.label --l rh.BA44_exvivo.thresh.label --l rh.BA45_exvivo.thresh.label --l rh.V1_exvivo.thresh.label --l rh.V2_exvivo.thresh.label --l rh.MT_exvivo.thresh.label --l rh.entorhinal_exvivo.thresh.label --l rh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose 
+sysname  Darwin
+hostname CFMI-iMac-04.local
+machine  x86_64
+user     freesurfer_user
+
+subject sub-10
+hemi    rh
+SUBJECTS_DIR /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+ColorTable /Applications/freesurfer/average/colortable_BA.txt
+AnnotName  BA_exvivo.thresh
+nlables 14
+LabelThresh 0 0.000000
+Loading /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.orig
+ 1 1530880 BA1_exvivo
+ 2 16749699 BA2_exvivo
+ 3 16711680 BA3a_exvivo
+ 4 3368703 BA3b_exvivo
+ 5 1376196 BA4a_exvivo
+ 6 13382655 BA4p_exvivo
+ 7 10036737 BA6_exvivo
+ 8 2490521 BA44_exvivo
+ 9 39283 BA45_exvivo
+10 3993 V1_exvivo
+11 8508928 V2_exvivo
+12 10027163 MT_exvivo
+13 16422433 perirhinal_exvivo
+14 16392598 entorhinal_exvivo
+Mapping unhit to unknown
+Found 93320 unhit vertices
+Writing annot to /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/label/rh.BA_exvivo.thresh.annot
+\n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.stats -b -a ./rh.BA_exvivo.annot -c ./BA_exvivo.ctab sub-10 rh white \n
+computing statistics for each annotation in ./rh.BA_exvivo.annot.
+reading volume /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/wm.mgz...
+reading input surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white...
+reading input pial surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.pial...
+reading input white surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+Using TH3 vertex volume calc
+Total face volume 222795
+Total vertex volume 219740 (mask=0)
+reading colortable from annotation file...
+colortable with 15 entries read (originally /Applications/freesurfer/average/colortable_BA.txt)
+Saving annotation colortable ./BA_exvivo.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1149027 mm^3    (det: 1.695440 )
+lhCtxGM: 216236.041 215626.000  diff=  610.0  pctdiff= 0.282
+rhCtxGM: 218634.454 218208.000  diff=  426.5  pctdiff= 0.195
+lhCtxWM: 171415.550 171847.000  diff= -431.5  pctdiff=-0.252
+rhCtxWM: 176591.447 177282.000  diff= -690.6  pctdiff=-0.391
+SubCortGMVol  47432.000
+SupraTentVol  846039.491 (843943.000) diff=2096.491 pctdiff=0.248
+SupraTentVolNotVent  832505.491 (830409.000) diff=2096.491 pctdiff=0.252
+BrainSegVol  957657.000 (955630.000) diff=2027.000 pctdiff=0.212
+BrainSegVolNotVent  941155.000 (940910.491) diff=244.509 pctdiff=0.026
+BrainSegVolNotVent  941155.000
+CerebellumVol 110587.000
+VentChorVol   13534.000
+3rd4th5thCSF   2968.000
+CSFVol   941.000, OptChiasmVol   159.000
+MaskVol 1301888.000
+  839    425   1545  2.427 0.661     0.146     0.054       18     1.9  BA1_exvivo
+ 2606   1673   4085  2.275 0.558     0.118     0.030       26     3.1  BA2_exvivo
+  851    572    758  1.815 0.455     0.146     0.038       10     1.5  BA3a_exvivo
+ 1500    983   2059  1.792 0.580     0.105     0.025       15     1.5  BA3b_exvivo
+ 1449    823   2488  2.661 0.543     0.110     0.035       12     2.3  BA4a_exvivo
+  892    640   1443  2.434 0.496     0.108     0.024        5     0.9  BA4p_exvivo
+ 7549   4976  18213  3.082 0.658     0.122     0.032       75     9.4  BA6_exvivo
+ 2803   1891   6321  2.970 0.524     0.120     0.028       31     3.1  BA44_exvivo
+ 3976   2738   9176  2.767 0.725     0.141     0.039       63     6.4  BA45_exvivo
+ 2620   1990   3662  1.803 0.538     0.162     0.047       42     5.3  V1_exvivo
+ 6388   4185   9403  2.091 0.578     0.151     0.040       95    10.5  V2_exvivo
+ 2148   1499   3729  2.433 0.535     0.134     0.033       21     2.7  MT_exvivo
+  538    326   1493  3.283 0.651     0.103     0.030        4     0.7  perirhinal_exvivo
+  349    225    922  3.248 0.631     0.102     0.032        3     0.3  entorhinal_exvivo
+\n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.thresh.stats -b -a ./rh.BA_exvivo.thresh.annot -c ./BA_exvivo.thresh.ctab sub-10 rh white \n
+computing statistics for each annotation in ./rh.BA_exvivo.thresh.annot.
+reading volume /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/mri/wm.mgz...
+reading input surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white...
+reading input pial surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.pial...
+reading input white surface /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-10/surf/rh.white...
+INFO: using TH3 volume calc
+INFO: assuming MGZ format for volumes.
+Using TH3 vertex volume calc
+Total face volume 222795
+Total vertex volume 219740 (mask=0)
+reading colortable from annotation file...
+colortable with 15 entries read (originally /Applications/freesurfer/average/colortable_BA.txt)
+Saving annotation colortable ./BA_exvivo.thresh.ctab
+
+table columns are:
+    number of vertices
+    total surface area (mm^2)
+    total gray matter volume (mm^3)
+    average cortical thickness +- standard deviation (mm)
+    integrated rectified mean curvature
+    integrated rectified Gaussian curvature
+    folding index
+    intrinsic curvature index
+    structure name
+
+atlas_icv (eTIV) = 1149027 mm^3    (det: 1.695440 )
+lhCtxGM: 216236.041 215626.000  diff=  610.0  pctdiff= 0.282
+rhCtxGM: 218634.454 218208.000  diff=  426.5  pctdiff= 0.195
+lhCtxWM: 171415.550 171847.000  diff= -431.5  pctdiff=-0.252
+rhCtxWM: 176591.447 177282.000  diff= -690.6  pctdiff=-0.391
+SubCortGMVol  47432.000
+SupraTentVol  846039.491 (843943.000) diff=2096.491 pctdiff=0.248
+SupraTentVolNotVent  832505.491 (830409.000) diff=2096.491 pctdiff=0.252
+BrainSegVol  957657.000 (955630.000) diff=2027.000 pctdiff=0.212
+BrainSegVolNotVent  941155.000 (940910.491) diff=244.509 pctdiff=0.026
+BrainSegVolNotVent  941155.000
+CerebellumVol 110587.000
+VentChorVol   13534.000
+3rd4th5thCSF   2968.000
+CSFVol   941.000, OptChiasmVol   159.000
+MaskVol 1301888.000
+  550    271    871  2.217 0.583     0.132     0.051        9     1.2  BA1_exvivo
+ 1408    888   2362  2.299 0.577     0.106     0.029       11     1.4  BA2_exvivo
+  745    500    618  1.852 0.430     0.150     0.030        8     1.0  BA3a_exvivo
+ 1106    774   1241  1.519 0.344     0.082     0.013        4     0.6  BA3b_exvivo
+ 1016    537   1667  2.739 0.559     0.120     0.044       11     2.1  BA4a_exvivo
+  722    556   1194  2.356 0.520     0.110     0.024        4     0.7  BA4p_exvivo
+ 4807   3208  11303  2.998 0.653     0.124     0.032       50     5.8  BA6_exvivo
+  789    533   1999  3.068 0.565     0.124     0.028       10     1.0  BA44_exvivo
+ 1083    744   2913  3.038 0.705     0.159     0.050       21     2.2  BA45_exvivo
+ 2437   1870   3371  1.789 0.529     0.161     0.046       38     5.0  V1_exvivo
+ 3412   2261   4540  1.889 0.526     0.160     0.044       59     6.2  V2_exvivo
+  332    223    681  2.495 0.465     0.126     0.035        4     0.4  MT_exvivo
+  327    203    980  3.333 0.562     0.088     0.022        2     0.3  perirhinal_exvivo
+  242    167    530  3.024 0.710     0.109     0.024        2     0.3  entorhinal_exvivo
+
+Started at Fri Jul 14 14:22:19 EDT 2017 
+Ended   at Fri Jul 14 14:29:23 EDT 2017
+#@#%# recon-all-run-time-hours 0.117
+recon-all -s sub-10 finished without error at Fri Jul 14 14:29:24 EDT 2017

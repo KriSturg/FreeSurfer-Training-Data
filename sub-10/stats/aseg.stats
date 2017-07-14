@@ -1,0 +1,125 @@
+# Title Segmentation Statistics 
+# 
+# generating_program mri_segstats
+# cvs_version $Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $
+# cmdline mri_segstats --seg mri/aseg.mgz --sum stats/aseg.stats --pv mri/norm.mgz --empty --brainmask mri/brainmask.mgz --brain-vol-from-seg --excludeid 0 --excl-ctxgmwm --supratent --subcortgray --in mri/norm.mgz --in-intensity-name norm --in-intensity-units MR --etiv --surf-wm-vol --surf-ctx-vol --totalgray --euler --ctab /Applications/freesurfer/ASegStatsLUT.txt --subject sub-10 
+# sysname  Darwin
+# hostname CFMI-iMac-04.local
+# machine  x86_64
+# user     freesurfer_user
+# anatomy_type volume
+# 
+# SUBJECTS_DIR /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data
+# subjectname sub-10
+# Measure BrainSeg, BrainSegVol, Brain Segmentation Volume, 957657.000000, mm^3
+# Measure BrainSegNotVent, BrainSegVolNotVent, Brain Segmentation Volume Without Ventricles, 941155.000000, mm^3
+# Measure BrainSegNotVentSurf, BrainSegVolNotVentSurf, Brain Segmentation Volume Without Ventricles from Surf, 940910.491224, mm^3
+# Measure VentricleChoroidVol, VentricleChoroidVol, Volume of ventricles and choroid plexus, 13534.000000, mm^3
+# Measure lhCortex, lhCortexVol, Left hemisphere cortical gray matter volume, 216236.041141, mm^3
+# Measure rhCortex, rhCortexVol, Right hemisphere cortical gray matter volume, 218634.453589, mm^3
+# Measure Cortex, CortexVol, Total cortical gray matter volume, 434870.494730, mm^3
+# Measure lhCerebralWhiteMatter, lhCerebralWhiteMatterVol, Left hemisphere cerebral white matter volume, 171415.549770, mm^3
+# Measure rhCerebralWhiteMatter, rhCerebralWhiteMatterVol, Right hemisphere cerebral white matter volume, 176591.446724, mm^3
+# Measure CerebralWhiteMatter, CerebralWhiteMatterVol, Total cerebral white matter volume, 348006.996494, mm^3
+# Measure SubCortGray, SubCortGrayVol, Subcortical gray matter volume, 47432.000000, mm^3
+# Measure TotalGray, TotalGrayVol, Total gray matter volume, 572438.494730, mm^3
+# Measure SupraTentorial, SupraTentorialVol, Supratentorial volume, 846039.491224, mm^3
+# Measure SupraTentorialNotVent, SupraTentorialVolNotVent, Supratentorial volume, 832505.491224, mm^3
+# Measure SupraTentorialNotVentVox, SupraTentorialVolNotVentVox, Supratentorial volume voxel count, 830409.000000, mm^3
+# Measure Mask, MaskVol, Mask Volume, 1301888.000000, mm^3
+# Measure BrainSegVol-to-eTIV, BrainSegVol-to-eTIV, Ratio of BrainSegVol to eTIV, 0.833450, unitless
+# Measure MaskVol-to-eTIV, MaskVol-to-eTIV, Ratio of MaskVol to eTIV, 1.133035, unitless
+# Measure lhSurfaceHoles, lhSurfaceHoles, Number of defect holes in lh surfaces prior to fixing, 42, unitless
+# Measure rhSurfaceHoles, rhSurfaceHoles, Number of defect holes in rh surfaces prior to fixing, 43, unitless
+# Measure SurfaceHoles, SurfaceHoles, Total number of defect holes in surfaces prior to fixing, 85, unitless
+# Measure EstimatedTotalIntraCranialVol, eTIV, Estimated Total Intracranial Volume, 1149027.007117, mm^3
+# SegVolFile mri/aseg.mgz 
+# SegVolFileTimeStamp  2017/07/14 13:47:55 
+# ColorTable /Applications/freesurfer/ASegStatsLUT.txt 
+# ColorTableTimeStamp 2017/01/19 23:14:40 
+# InVolFile  mri/norm.mgz 
+# InVolFileTimeStamp  2017/07/14 01:11:34 
+# InVolFrame 0 
+# PVVolFile  mri/norm.mgz 
+# PVVolFileTimeStamp  2017/07/14 01:11:34 
+# Excluding Cortical Gray and White Matter
+# ExcludeSegId 0 2 3 41 42 
+# VoxelVolume_mm3 1 
+# TableCol  1 ColHeader Index 
+# TableCol  1 FieldName Index 
+# TableCol  1 Units     NA 
+# TableCol  2 ColHeader SegId 
+# TableCol  2 FieldName Segmentation Id
+# TableCol  2 Units     NA
+# TableCol  3 ColHeader NVoxels 
+# TableCol  3 FieldName Number of Voxels
+# TableCol  3 Units     unitless
+# TableCol  4 ColHeader Volume_mm3
+# TableCol  4 FieldName Volume
+# TableCol  4 Units     mm^3
+# TableCol  5 ColHeader StructName
+# TableCol  5 FieldName Structure Name
+# TableCol  5 Units     NA
+# TableCol  6 ColHeader normMean 
+# TableCol  6 FieldName Intensity normMean
+# TableCol  6 Units     MR
+# TableCol  7 ColHeader normStdDev
+# TableCol  7 FieldName Itensity normStdDev
+# TableCol  7 Units     MR
+# TableCol  8 ColHeader normMin
+# TableCol  8 FieldName Intensity normMin
+# TableCol  8 Units     MR
+# TableCol  9 ColHeader normMax
+# TableCol  9 FieldName Intensity normMax
+# TableCol  9 Units     MR
+# TableCol 10 ColHeader normRange
+# TableCol 10 FieldName Intensity normRange
+# TableCol 10 Units     MR
+# NRows 45 
+# NTableCols 10 
+# ColHeaders  Index SegId NVoxels Volume_mm3 StructName normMean normStdDev normMin normMax normRange  
+  1   4      6229     6496.0  Left-Lateral-Ventricle            32.6030    12.7118     5.0000    84.0000    79.0000 
+  2   5       141      173.2  Left-Inf-Lat-Vent                 46.7518    13.0872    13.0000    81.0000    68.0000 
+  3   7     10740    11052.7  Left-Cerebellum-White-Matter      85.4655     6.4844    34.0000   103.0000    69.0000 
+  4   8     44880    44945.8  Left-Cerebellum-Cortex            65.7617     9.4986    20.0000    96.0000    76.0000 
+  5  10      6867     6775.1  Left-Thalamus-Proper              92.9085     9.3970    38.0000   108.0000    70.0000 
+  6  11      2876     2819.2  Left-Caudate                      77.1015     8.2365    49.0000   102.0000    53.0000 
+  7  12      3262     3250.2  Left-Putamen                      87.6882     6.7504    55.0000   108.0000    53.0000 
+  8  13      1239     1203.3  Left-Pallidum                    100.1638     4.0547    80.0000   110.0000    30.0000 
+  9  14       751      775.7  3rd-Ventricle                     41.9973    15.2404     9.0000    85.0000    76.0000 
+ 10  15      1276     1385.5  4th-Ventricle                     35.3409    12.4455     6.0000    83.0000    77.0000 
+ 11  16     15080    15003.1  Brain-Stem                        84.9180    10.2789    24.0000   116.0000    92.0000 
+ 12  17      3918     3757.5  Left-Hippocampus                  70.0607     7.0767    37.0000    99.0000    62.0000 
+ 13  18      1439     1414.3  Left-Amygdala                     70.0354     6.3682    49.0000    89.0000    40.0000 
+ 14  24       941      912.3  CSF                               51.4240    15.3046    20.0000    84.0000    64.0000 
+ 15  26       417      413.3  Left-Accumbens-area               74.2326     5.6777    48.0000    88.0000    40.0000 
+ 16  28      3841     3686.9  Left-VentralDC                    90.4436    10.0505    25.0000   109.0000    84.0000 
+ 17  30        10       20.5  Left-vessel                       60.9000     8.9747    44.0000    71.0000    27.0000 
+ 18  31       491      454.4  Left-choroid-plexus               51.5418    12.4946    25.0000    88.0000    63.0000 
+ 19  43      6147     6310.5  Right-Lateral-Ventricle           33.7114    13.6333     9.0000    86.0000    77.0000 
+ 20  44        97      122.1  Right-Inf-Lat-Vent                49.8763    12.1871    22.0000    85.0000    63.0000 
+ 21  46      9711    10051.7  Right-Cerebellum-White-Matter     85.1492     6.2702    35.0000   104.0000    69.0000 
+ 22  47     44186    44139.7  Right-Cerebellum-Cortex           66.6078     9.1422    14.0000    99.0000    85.0000 
+ 23  49      6609     6491.8  Right-Thalamus-Proper             92.3569     9.6354    36.0000   109.0000    73.0000 
+ 24  50      2697     2667.4  Right-Caudate                     77.2362     8.2955    43.0000   103.0000    60.0000 
+ 25  51      3210     3184.8  Right-Putamen                     88.1785     7.5775    59.0000   107.0000    48.0000 
+ 26  52      1414     1352.7  Right-Pallidum                   100.1096     3.7403    83.0000   110.0000    27.0000 
+ 27  53      4191     4035.7  Right-Hippocampus                 70.4309     7.1309    38.0000    96.0000    58.0000 
+ 28  54      1541     1521.8  Right-Amygdala                    70.4160     6.6426    36.0000    95.0000    59.0000 
+ 29  58       425      402.3  Right-Accumbens-area              77.0400     5.6138    47.0000    93.0000    46.0000 
+ 30  60      3511     3368.9  Right-VentralDC                   91.1621     9.9868    48.0000   114.0000    66.0000 
+ 31  62         4       11.1  Right-vessel                      60.7500     5.6789    55.0000    67.0000    12.0000 
+ 32  63       436      398.7  Right-choroid-plexus              51.6422    11.1444    26.0000    78.0000    52.0000 
+ 33  72         0        0.0  5th-Ventricle                      0.0000     0.0000     0.0000     0.0000     0.0000 
+ 34  77      1352     1265.3  WM-hypointensities                66.0725    14.0524    19.0000   105.0000    86.0000 
+ 35  78         0        0.0  Left-WM-hypointensities            0.0000     0.0000     0.0000     0.0000     0.0000 
+ 36  79         0        0.0  Right-WM-hypointensities           0.0000     0.0000     0.0000     0.0000     0.0000 
+ 37  80         0        0.0  non-WM-hypointensities             0.0000     0.0000     0.0000     0.0000     0.0000 
+ 38  81         0        0.0  Left-non-WM-hypointensities        0.0000     0.0000     0.0000     0.0000     0.0000 
+ 39  82         0        0.0  Right-non-WM-hypointensities       0.0000     0.0000     0.0000     0.0000     0.0000 
+ 40  85       179      166.7  Optic-Chiasm                      69.3184    16.4062    33.0000   103.0000    70.0000 
+ 41 251       913      853.7  CC_Posterior                      96.3494    12.4657    41.0000   109.0000    68.0000 
+ 42 252       616      547.3  CC_Mid_Posterior                  86.2159    16.8654    25.0000   106.0000    81.0000 
+ 43 253       477      427.9  CC_Central                        90.4633    16.3639    31.0000   109.0000    78.0000 
+ 44 254       479      419.1  CC_Mid_Anterior                   90.9562    15.3091    44.0000   116.0000    72.0000 
+ 45 255       749      680.5  CC_Anterior                       96.3057    12.5097    50.0000   114.0000    64.0000 
