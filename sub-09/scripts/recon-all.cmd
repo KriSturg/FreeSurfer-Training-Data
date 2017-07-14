@@ -427,3 +427,169 @@ talairach_avi log file is transforms/talairach_avi.log...
 \n mris_label2annot --s sub-09 --hemi rh --ctab /Volumes/CFMI-CFS/opt/fs6/average/colortable_BA.txt --l rh.BA1_exvivo.thresh.label --l rh.BA2_exvivo.thresh.label --l rh.BA3a_exvivo.thresh.label --l rh.BA3b_exvivo.thresh.label --l rh.BA4a_exvivo.thresh.label --l rh.BA4p_exvivo.thresh.label --l rh.BA6_exvivo.thresh.label --l rh.BA44_exvivo.thresh.label --l rh.BA45_exvivo.thresh.label --l rh.V1_exvivo.thresh.label --l rh.V2_exvivo.thresh.label --l rh.MT_exvivo.thresh.label --l rh.entorhinal_exvivo.thresh.label --l rh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose \n
 \n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.stats -b -a ./rh.BA_exvivo.annot -c ./BA_exvivo.ctab sub-09 rh white \n
 \n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.thresh.stats -b -a ./rh.BA_exvivo.thresh.annot -c ./BA_exvivo.thresh.ctab sub-09 rh white \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 04:21:42 EDT 2017 
+#--------------------------------------------
+#@# MotionCor Fri Jul 14 04:21:42 EDT 2017
+\n cp /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/orig/001.mgz /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/rawavg.mgz \n
+\n mri_convert /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/rawavg.mgz /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/orig.mgz --conform \n
+\n mri_add_xform_to_header -c /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/transforms/talairach.xfm /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/orig.mgz /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/orig.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 04:21:53 EDT 2017 
+#--------------------------------------------
+#@# Talairach Fri Jul 14 04:21:53 EDT 2017
+\n mri_nu_correct.mni --no-rescale --i orig.mgz --o orig_nu.mgz --n 1 --proto-iters 1000 --distance 50 \n
+\n talairach_avi --i orig_nu.mgz --xfm transforms/talairach.auto.xfm \n
+talairach_avi log file is transforms/talairach_avi.log...
+\nINFO: transforms/talairach.xfm already exists!
+The new transforms/talairach.auto.xfm will not be copied to transforms/talairach.xfm
+This is done to retain any edits made to transforms/talairach.xfm
+Add the -clean-tal flag to recon-all to overwrite transforms/talairach.xfm\n
+#--------------------------------------------
+#@# Talairach Failure Detection Fri Jul 14 04:24:25 EDT 2017
+\n talairach_afd -T 0.005 -xfm transforms/talairach.xfm \n
+\n awk -f /Applications/freesurfer/bin/extract_talairach_avi_QA.awk /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/transforms/talairach_avi.log \n
+\n tal_QC_AZS /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/transforms/talairach_avi.log \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 04:24:26 EDT 2017 
+#--------------------------------------------
+#@# Nu Intensity Correction Fri Jul 14 04:24:26 EDT 2017
+\n mri_nu_correct.mni --i orig.mgz --o nu.mgz --uchar transforms/talairach.xfm --n 2 \n
+\n mri_add_xform_to_header -c /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/transforms/talairach.xfm nu.mgz nu.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 04:27:27 EDT 2017 
+#--------------------------------------------
+#@# Intensity Normalization Fri Jul 14 04:27:27 EDT 2017
+\n mri_normalize -g 1 -mprage nu.mgz T1.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 04:30:51 EDT 2017 
+#--------------------------------------------
+#@# Skull Stripping Fri Jul 14 04:30:52 EDT 2017
+\n mri_watershed -rusage /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/touch/rusage.mri_watershed.dat -T1 -brain_atlas /Applications/freesurfer/average/RB_all_withskull_2016-05-10.vc700.gca transforms/talairach_with_skull.lta T1.mgz brainmask.auto.mgz \n
+\nINFO: brainmask.mgz already exists!
+The new brainmask.auto.mgz will not be copied to brainmask.mgz.
+This is done to retain any edits made to brainmask.mgz.
+Add the -clean-bm flag to recon-all to overwrite brainmask.mgz.\n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 04:31:40 EDT 2017 
+#-------------------------------------
+#@# EM Registration Fri Jul 14 04:31:41 EDT 2017
+\n mri_em_register -rusage /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/touch/rusage.mri_em_register.dat -uns 3 -mask brainmask.mgz nu.mgz /Applications/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.lta \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 04:50:46 EDT 2017 
+#--------------------------------------
+#@# CA Normalize Fri Jul 14 04:50:46 EDT 2017
+\n mri_ca_normalize -c ctrl_pts.mgz -mask brainmask.mgz nu.mgz /Applications/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.lta norm.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 04:52:49 EDT 2017 
+#--------------------------------------
+#@# CA Reg Fri Jul 14 04:52:49 EDT 2017
+\n mri_ca_register -rusage /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/touch/rusage.mri_ca_register.dat -nobigventricles -T transforms/talairach.lta -align-after -mask brainmask.mgz norm.mgz /Applications/freesurfer/average/RB_all_2016-05-10.vc700.gca transforms/talairach.m3z \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 09:23:47 EDT 2017 
+#--------------------------------------
+#@# SubCort Seg Fri Jul 14 09:23:47 EDT 2017
+\n mri_ca_label -relabel_unlikely 9 .3 -prior 0.5 -align norm.mgz transforms/talairach.m3z /Applications/freesurfer/average/RB_all_2016-05-10.vc700.gca aseg.auto_noCCseg.mgz \n
+\n mri_cc -aseg aseg.auto_noCCseg.mgz -o aseg.auto.mgz -lta /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/mri/transforms/cc_up.lta sub-09 \n
+#--------------------------------------
+#@# Merge ASeg Fri Jul 14 10:43:12 EDT 2017
+\n cp aseg.auto.mgz aseg.presurf.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:43:13 EDT 2017 
+#--------------------------------------------
+#@# Intensity Normalization2 Fri Jul 14 10:43:14 EDT 2017
+\n mri_normalize -mprage -aseg aseg.presurf.mgz -mask brainmask.mgz norm.mgz brain.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:48:15 EDT 2017 
+#--------------------------------------------
+#@# Mask BFS Fri Jul 14 10:48:15 EDT 2017
+\n mri_mask -T 5 brain.mgz brainmask.mgz brain.finalsurfs.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:48:19 EDT 2017 
+#--------------------------------------------
+#@# WM Segmentation Fri Jul 14 10:48:19 EDT 2017
+\n mri_binarize --i wm.mgz --min 255 --max 255 --o wm255.mgz --count wm255.txt \n
+\n mri_binarize --i wm.mgz --min 1 --max 1 --o wm1.mgz --count wm1.txt \n
+\n rm wm1.mgz wm255.mgz \n
+\n cp wm.mgz wm.seg.mgz \n
+\n mri_segment -keep -mprage brain.mgz wm.seg.mgz \n
+\n mri_edit_wm_with_aseg -keep-in wm.seg.mgz brain.mgz aseg.presurf.mgz wm.asegedit.mgz \n
+\n mri_pretess -keep wm.asegedit.mgz wm norm.mgz wm.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:51:48 EDT 2017 
+#--------------------------------------------
+#@# Fill Fri Jul 14 10:51:48 EDT 2017
+\n mri_fill -a ../scripts/ponscc.cut.log -xform transforms/talairach.lta -segmentation aseg.auto_noCCseg.mgz wm.mgz filled.mgz \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:52:51 EDT 2017 
+#--------------------------------------------
+#@# Tessellate lh Fri Jul 14 10:52:51 EDT 2017
+\n mri_pretess ../mri/filled.mgz 255 ../mri/norm.mgz ../mri/filled-pretess255.mgz \n
+\n mri_tessellate ../mri/filled-pretess255.mgz 255 ../surf/lh.orig.nofix \n
+\n rm -f ../mri/filled-pretess255.mgz \n
+\n mris_extract_main_component ../surf/lh.orig.nofix ../surf/lh.orig.nofix \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:53:03 EDT 2017 
+#--------------------------------------------
+#@# Tessellate rh Fri Jul 14 10:53:03 EDT 2017
+\n mri_pretess ../mri/filled.mgz 127 ../mri/norm.mgz ../mri/filled-pretess127.mgz \n
+\n mri_tessellate ../mri/filled-pretess127.mgz 127 ../surf/rh.orig.nofix \n
+\n rm -f ../mri/filled-pretess127.mgz \n
+\n mris_extract_main_component ../surf/rh.orig.nofix ../surf/rh.orig.nofix \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:53:16 EDT 2017 
+#--------------------------------------------
+#@# Smooth1 lh Fri Jul 14 10:53:16 EDT 2017
+\n mris_smooth -nw -seed 1234 ../surf/lh.orig.nofix ../surf/lh.smoothwm.nofix \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:53:31 EDT 2017 
+#--------------------------------------------
+#@# Smooth1 rh Fri Jul 14 10:53:31 EDT 2017
+\n mris_smooth -nw -seed 1234 ../surf/rh.orig.nofix ../surf/rh.smoothwm.nofix \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:53:47 EDT 2017 
+#--------------------------------------------
+#@# Inflation1 lh Fri Jul 14 10:53:47 EDT 2017
+\n mris_inflate -no-save-sulc ../surf/lh.smoothwm.nofix ../surf/lh.inflated.nofix \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:54:55 EDT 2017 
+#--------------------------------------------
+#@# Inflation1 rh Fri Jul 14 10:54:55 EDT 2017
+\n mris_inflate -no-save-sulc ../surf/rh.smoothwm.nofix ../surf/rh.inflated.nofix \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 10:56:06 EDT 2017 
+#--------------------------------------------
+#@# QSphere lh Fri Jul 14 10:56:06 EDT 2017
+\n mris_sphere -q -seed 1234 ../surf/lh.inflated.nofix ../surf/lh.qsphere.nofix \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 11:02:49 EDT 2017 
+#--------------------------------------------
+#@# QSphere rh Fri Jul 14 11:02:49 EDT 2017
+\n mris_sphere -q -seed 1234 ../surf/rh.inflated.nofix ../surf/rh.qsphere.nofix \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 11:09:09 EDT 2017 
+#--------------------------------------------
+#@# Fix Topology Copy lh Fri Jul 14 11:09:09 EDT 2017
+\n cp ../surf/lh.orig.nofix ../surf/lh.orig \n
+\n cp ../surf/lh.inflated.nofix ../surf/lh.inflated \n
+#@# Fix Topology lh Fri Jul 14 11:09:09 EDT 2017
+\n mris_fix_topology -rusage /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/touch/rusage.mris_fix_topology.lh.dat -mgz -sphere qsphere.nofix -ga -seed 1234 sub-09 lh \n
+\n mris_euler_number ../surf/lh.orig \n
+\n mris_remove_intersection ../surf/lh.orig ../surf/lh.orig \n
+\n rm ../surf/lh.inflated \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 12:17:58 EDT 2017 
+#--------------------------------------------
+#@# Fix Topology Copy rh Fri Jul 14 12:17:58 EDT 2017
+\n cp ../surf/rh.orig.nofix ../surf/rh.orig \n
+\n cp ../surf/rh.inflated.nofix ../surf/rh.inflated \n
+#@# Fix Topology rh Fri Jul 14 12:17:58 EDT 2017
+\n mris_fix_topology -rusage /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-09/touch/rusage.mris_fix_topology.rh.dat -mgz -sphere qsphere.nofix -ga -seed 1234 sub-09 rh \n
+\n mris_euler_number ../surf/rh.orig \n
+\n mris_remove_intersection ../surf/rh.orig ../surf/rh.orig \n
+\n rm ../surf/rh.inflated \n
+\n\n#---------------------------------
+# New invocation of recon-all Fri Jul 14 13:30:52 EDT 2017 
+#--------------------------------------------
+#@# Make White Surf lh Fri Jul 14 13:30:52 EDT 2017
+\n mris_make_surfaces -aseg ../mri/aseg.presurf -white white.preaparc -noaparc -mgz -T1 brain.finalsurfs sub-09 lh \n
