@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT sub-05
+START_TIME Sat Jul 15 23:13:01 EDT 2017
+END_TIME Sat Jul 15 23:19:48 EDT 2017
+RUNTIME_HOURS 0.113
+USER freesurfer_user
+HOST CFMI-iMac-04.local
+PROCESSOR x86_64
+OS Darwin
+UNAME Darwin CFMI-iMac-04.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+VERSION $Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
+CMDPATH /Applications/freesurfer/bin/recon-all
+CMDARGS -s /Users/freesurfer_user/Documents/GitHub/FreeSurfer-Training-Data/sub-05 -hemi rh -balabels
