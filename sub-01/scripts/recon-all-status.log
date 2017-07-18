@@ -394,3 +394,89 @@ status file for recon-all
 Fri Jul  7 15:54:32 EDT 2017
 #@# BA_exvivo Labels rh Fri Jul  7 15:54:32 EDT 2017
 recon-all -s sub-01 finished without error at Fri Jul  7 15:59:33 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 12:33:53 EDT 2017
+#@# Intensity Normalization2 Mon Jul 10 12:33:53 EDT 2017
+Darwin CFMI-iMac-04.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+recon-all -s sub-01 exited with ERRORS at Mon Jul 10 12:33:53 EDT 2017
+
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 12:40:28 EDT 2017
+#@# Intensity Normalization2 Mon Jul 10 12:40:28 EDT 2017
+Darwin CFMI-iMac-04.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+recon-all -s sub-01 exited with ERRORS at Mon Jul 10 12:40:28 EDT 2017
+
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 12:43:21 EDT 2017
+#@# Intensity Normalization2 Mon Jul 10 12:43:21 EDT 2017
+Darwin CFMI-iMac-04.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+recon-all -s sub-01 exited with ERRORS at Mon Jul 10 12:43:21 EDT 2017
+
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 12:54:16 EDT 2017
+#@# MotionCor Mon Jul 10 12:54:16 EDT 2017
+recon-all -s sub-01 finished without error at Mon Jul 10 12:54:26 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 12:54:26 EDT 2017
+#@# Talairach Mon Jul 10 12:54:26 EDT 2017
+#@# Talairach Failure Detection Mon Jul 10 12:57:00 EDT 2017
+recon-all -s sub-01 finished without error at Mon Jul 10 12:57:01 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 12:57:01 EDT 2017
+#@# Nu Intensity Correction Mon Jul 10 12:57:01 EDT 2017
+recon-all -s sub-01 finished without error at Mon Jul 10 13:00:14 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 13:00:15 EDT 2017
+#@# Intensity Normalization Mon Jul 10 13:00:15 EDT 2017
+recon-all -s sub-01 finished without error at Mon Jul 10 13:03:43 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 13:03:44 EDT 2017
+#@# Skull Stripping Mon Jul 10 13:03:44 EDT 2017
+recon-all -s sub-01 finished without error at Mon Jul 10 13:04:33 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 13:04:35 EDT 2017
+#@# EM Registration Mon Jul 10 13:04:35 EDT 2017
+recon-all -s sub-01 finished without error at Mon Jul 10 13:21:23 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 13:21:24 EDT 2017
+#@# CA Normalize Mon Jul 10 13:21:24 EDT 2017
+recon-all -s sub-01 finished without error at Mon Jul 10 13:23:27 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Mon Jul 10 13:23:28 EDT 2017
+#@# CA Reg Mon Jul 10 13:23:28 EDT 2017
